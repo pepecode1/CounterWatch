@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B1065F2C2E805DB8007009FF /* CounterWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B1065F2B2E805DB8007009FF /* CounterWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1065F662E806A46007009FF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1065F652E806A46007009FF /* WidgetKit.framework */; };
+		B1065F682E806A46007009FF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1065F672E806A46007009FF /* SwiftUI.framework */; };
+		B1065F772E806A49007009FF /* CounterComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B1065F632E806A46007009FF /* CounterComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -17,6 +20,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B1065F2A2E805DB8007009FF;
 			remoteInfo = "CounterWatch Watch App";
+		};
+		B1065F5A2E80678B007009FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1065F1F2E805DB8007009FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1065F2A2E805DB8007009FF;
+			remoteInfo = "CounterWatch Watch App";
+		};
+		B1065F752E806A49007009FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1065F1F2E805DB8007009FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1065F622E806A45007009FF;
+			remoteInfo = CounterComplicationExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -32,17 +49,66 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1065F7C2E806A4A007009FF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1065F772E806A49007009FF /* CounterComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B1065F252E805DB8007009FF /* CounterWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1065F2B2E805DB8007009FF /* CounterWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CounterWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1065F562E80678A007009FF /* CounterViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1065F632E806A46007009FF /* CounterComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterComplicationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1065F652E806A46007009FF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B1065F672E806A46007009FF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B1065F842E806CCD007009FF /* CounterComplicationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CounterComplicationExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B1065F782E806A4A007009FF /* Exceptions for "CounterComplication" folder in "CounterComplicationExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B1065F622E806A45007009FF /* CounterComplicationExtension */;
+		};
+		B1065F862E806CEE007009FF /* Exceptions for "CounterWatch Watch App" folder in "CounterComplicationExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CounterModel.swift,
+			);
+			target = B1065F622E806A45007009FF /* CounterComplicationExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B1065F2F2E805DB8007009FF /* CounterWatch Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B1065F862E806CEE007009FF /* Exceptions for "CounterWatch Watch App" folder in "CounterComplicationExtension" target */,
+			);
 			path = "CounterWatch Watch App";
+			sourceTree = "<group>";
+		};
+		B1065F572E80678B007009FF /* CounterViewModelTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CounterViewModelTests;
+			sourceTree = "<group>";
+		};
+		B1065F692E806A46007009FF /* CounterComplication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B1065F782E806A4A007009FF /* Exceptions for "CounterComplication" folder in "CounterComplicationExtension" target */,
+			);
+			path = CounterComplication;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,13 +121,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1065F532E80678A007009FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1065F602E806A45007009FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1065F682E806A46007009FF /* SwiftUI.framework in Frameworks */,
+				B1065F662E806A46007009FF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B1065F1E2E805DB8007009FF = {
 			isa = PBXGroup;
 			children = (
+				B1065F842E806CCD007009FF /* CounterComplicationExtension.entitlements */,
 				B1065F2F2E805DB8007009FF /* CounterWatch Watch App */,
+				B1065F572E80678B007009FF /* CounterViewModelTests */,
+				B1065F692E806A46007009FF /* CounterComplication */,
+				B1065F642E806A46007009FF /* Frameworks */,
 				B1065F262E805DB8007009FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,8 +157,19 @@
 			children = (
 				B1065F252E805DB8007009FF /* CounterWatch.app */,
 				B1065F2B2E805DB8007009FF /* CounterWatch Watch App.app */,
+				B1065F562E80678A007009FF /* CounterViewModelTests.xctest */,
+				B1065F632E806A46007009FF /* CounterComplicationExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B1065F642E806A46007009FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1065F652E806A46007009FF /* WidgetKit.framework */,
+				B1065F672E806A46007009FF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +201,12 @@
 				B1065F272E805DB8007009FF /* Sources */,
 				B1065F282E805DB8007009FF /* Frameworks */,
 				B1065F292E805DB8007009FF /* Resources */,
+				B1065F7C2E806A4A007009FF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B1065F762E806A49007009FF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B1065F2F2E805DB8007009FF /* CounterWatch Watch App */,
@@ -118,6 +217,51 @@
 			productName = "CounterWatch Watch App";
 			productReference = B1065F2B2E805DB8007009FF /* CounterWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B1065F552E80678A007009FF /* CounterViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1065F5C2E80678B007009FF /* Build configuration list for PBXNativeTarget "CounterViewModelTests" */;
+			buildPhases = (
+				B1065F522E80678A007009FF /* Sources */,
+				B1065F532E80678A007009FF /* Frameworks */,
+				B1065F542E80678A007009FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1065F5B2E80678B007009FF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B1065F572E80678B007009FF /* CounterViewModelTests */,
+			);
+			name = CounterViewModelTests;
+			packageProductDependencies = (
+			);
+			productName = CounterViewModelTests;
+			productReference = B1065F562E80678A007009FF /* CounterViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1065F622E806A45007009FF /* CounterComplicationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1065F792E806A4A007009FF /* Build configuration list for PBXNativeTarget "CounterComplicationExtension" */;
+			buildPhases = (
+				B1065F5F2E806A45007009FF /* Sources */,
+				B1065F602E806A45007009FF /* Frameworks */,
+				B1065F612E806A45007009FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B1065F692E806A46007009FF /* CounterComplication */,
+			);
+			name = CounterComplicationExtension;
+			packageProductDependencies = (
+			);
+			productName = CounterComplicationExtension;
+			productReference = B1065F632E806A46007009FF /* CounterComplicationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -133,6 +277,13 @@
 						CreatedOnToolsVersion = 26.0;
 					};
 					B1065F2A2E805DB8007009FF = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					B1065F552E80678A007009FF = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = B1065F2A2E805DB8007009FF;
+					};
+					B1065F622E806A45007009FF = {
 						CreatedOnToolsVersion = 26.0;
 					};
 				};
@@ -153,6 +304,8 @@
 			targets = (
 				B1065F242E805DB8007009FF /* CounterWatch */,
 				B1065F2A2E805DB8007009FF /* CounterWatch Watch App */,
+				B1065F552E80678A007009FF /* CounterViewModelTests */,
+				B1065F622E806A45007009FF /* CounterComplicationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -172,10 +325,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1065F542E80678A007009FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1065F612E806A45007009FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1065F272E805DB8007009FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1065F522E80678A007009FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1065F5F2E806A45007009FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,6 +370,16 @@
 			isa = PBXTargetDependency;
 			target = B1065F2A2E805DB8007009FF /* CounterWatch Watch App */;
 			targetProxy = B1065F2D2E805DB8007009FF /* PBXContainerItemProxy */;
+		};
+		B1065F5B2E80678B007009FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1065F2A2E805DB8007009FF /* CounterWatch Watch App */;
+			targetProxy = B1065F5A2E80678B007009FF /* PBXContainerItemProxy */;
+		};
+		B1065F762E806A49007009FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1065F622E806A45007009FF /* CounterComplicationExtension */;
+			targetProxy = B1065F752E806A49007009FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -314,11 +505,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CounterWatch Watch App/CounterWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DC99J9NLW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CounterWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CounterWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -338,7 +531,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Debug;
 		};
@@ -347,11 +540,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CounterWatch Watch App/CounterWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DC99J9NLW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CounterWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CounterWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -372,7 +567,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -383,6 +578,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DC99J9NLW6;
 				INFOPLIST_KEY_CFBundleDisplayName = CounterWatch;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounterWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +596,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DC99J9NLW6;
 				INFOPLIST_KEY_CFBundleDisplayName = CounterWatch;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounterWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +605,122 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1065F5D2E80678B007009FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DC99J9NLW6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounterViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CounterWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CounterWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		B1065F5E2E80678B007009FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DC99J9NLW6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounterViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CounterWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CounterWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		B1065F7A2E806A4A007009FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CounterComplicationExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DC99J9NLW6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CounterComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CounterComplication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounterWatch.watchkitapp.CounterComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		B1065F7B2E806A4A007009FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CounterComplicationExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DC99J9NLW6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CounterComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CounterComplication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounterWatch.watchkitapp.CounterComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -437,6 +750,24 @@
 			buildConfigurations = (
 				B1065F3D2E805DBB007009FF /* Debug */,
 				B1065F3E2E805DBB007009FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1065F5C2E80678B007009FF /* Build configuration list for PBXNativeTarget "CounterViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1065F5D2E80678B007009FF /* Debug */,
+				B1065F5E2E80678B007009FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1065F792E806A4A007009FF /* Build configuration list for PBXNativeTarget "CounterComplicationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1065F7A2E806A4A007009FF /* Debug */,
+				B1065F7B2E806A4A007009FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
