@@ -70,6 +70,7 @@
 		B1065F652E806A46007009FF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		B1065F672E806A46007009FF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		B1065F842E806CCD007009FF /* CounterComplicationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CounterComplicationExtension.entitlements; sourceTree = "<group>"; };
+		B1E564592E8308630064A6E4 /* CounteriPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounteriPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -111,6 +112,11 @@
 			path = CounterComplication;
 			sourceTree = "<group>";
 		};
+		B1E5645A2E8308630064A6E4 /* CounteriPhone */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CounteriPhone;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1E564562E8308630064A6E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +160,7 @@
 				B1065F2F2E805DB8007009FF /* CounterWatch Watch App */,
 				B1065F572E80678B007009FF /* CounterViewModelTests */,
 				B1065F692E806A46007009FF /* CounterComplication */,
+				B1E5645A2E8308630064A6E4 /* CounteriPhone */,
 				B1065F642E806A46007009FF /* Frameworks */,
 				B1065F262E805DB8007009FF /* Products */,
 			);
@@ -159,6 +173,7 @@
 				B1065F2B2E805DB8007009FF /* CounterWatch Watch App.app */,
 				B1065F562E80678A007009FF /* CounterViewModelTests.xctest */,
 				B1065F632E806A46007009FF /* CounterComplicationExtension.appex */,
+				B1E564592E8308630064A6E4 /* CounteriPhone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,6 +278,28 @@
 			productReference = B1065F632E806A46007009FF /* CounterComplicationExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		B1E564582E8308630064A6E4 /* CounteriPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E564632E8308660064A6E4 /* Build configuration list for PBXNativeTarget "CounteriPhone" */;
+			buildPhases = (
+				B1E564552E8308630064A6E4 /* Sources */,
+				B1E564562E8308630064A6E4 /* Frameworks */,
+				B1E564572E8308630064A6E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B1E5645A2E8308630064A6E4 /* CounteriPhone */,
+			);
+			name = CounteriPhone;
+			packageProductDependencies = (
+			);
+			productName = CounteriPhone;
+			productReference = B1E564592E8308630064A6E4 /* CounteriPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,6 +323,9 @@
 					B1065F622E806A45007009FF = {
 						CreatedOnToolsVersion = 26.0;
 					};
+					B1E564582E8308630064A6E4 = {
+						CreatedOnToolsVersion = 26.0;
+					};
 				};
 			};
 			buildConfigurationList = B1065F222E805DB8007009FF /* Build configuration list for PBXProject "CounterWatch" */;
@@ -306,6 +346,7 @@
 				B1065F2A2E805DB8007009FF /* CounterWatch Watch App */,
 				B1065F552E80678A007009FF /* CounterViewModelTests */,
 				B1065F622E806A45007009FF /* CounterComplicationExtension */,
+				B1E564582E8308630064A6E4 /* CounteriPhone */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +380,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1E564572E8308630064A6E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -357,6 +405,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B1065F5F2E806A45007009FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E564552E8308630064A6E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -724,6 +779,75 @@
 			};
 			name = Release;
 		};
+		B1E564612E8308660064A6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DC99J9NLW6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounteriPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E564622E8308660064A6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DC99J9NLW6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepecode.CounteriPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -768,6 +892,15 @@
 			buildConfigurations = (
 				B1065F7A2E806A4A007009FF /* Debug */,
 				B1065F7B2E806A4A007009FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E564632E8308660064A6E4 /* Build configuration list for PBXNativeTarget "CounteriPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E564612E8308660064A6E4 /* Debug */,
+				B1E564622E8308660064A6E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
