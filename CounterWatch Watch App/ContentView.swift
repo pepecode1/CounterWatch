@@ -19,6 +19,7 @@ struct ContentView: View {
                     .gesture(TapGesture(count: 2).onEnded {
                         viewModel.incrementCount()
                     })
+                    .accessibilityIdentifier("counterText")
                 HStack {
                     Button(action: {
                         viewModel.decrementCount()
@@ -29,6 +30,7 @@ struct ContentView: View {
                             .background(Color.red)
                             .clipShape(Circle())
                     }
+                    .accessibilityIdentifier("decrementButton")
                     if #available(watchOS 11.0, *) {
                         Button(action: {
                             viewModel.incrementCount()
@@ -41,6 +43,7 @@ struct ContentView: View {
                         }
                         /// Asocia el botón "+" al gesto de doble toque físico.
                         .handGestureShortcut(.primaryAction)
+                        .accessibilityIdentifier("incrementButton")
                     } else {
                         Button(action: {
                             viewModel.incrementCount()
@@ -54,6 +57,7 @@ struct ContentView: View {
                         .gesture(TapGesture(count: 2).onEnded {
                             viewModel.incrementCount()
                         })
+                        .accessibilityIdentifier("incrementButton")
                     }
                 }
                 NavigationLink(
@@ -62,6 +66,7 @@ struct ContentView: View {
                         Text("Configurar")
                             .font(.footnote)
                     })
+                    .accessibilityIdentifier("settingsLink")
             }
             .navigationTitle("Contador")
         }

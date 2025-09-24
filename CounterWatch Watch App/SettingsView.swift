@@ -21,6 +21,7 @@ struct SettingsView: View {
         VStack {
             Text("Alerta cada: \(tempInterval) personas")
                 .font(.headline)
+                .accessibilityIdentifier("intervalText")
             HStack {
                 Button(action: {
                     if tempInterval > 1 {
@@ -33,6 +34,7 @@ struct SettingsView: View {
                         .background(Color.gray)
                         .clipShape(Circle())
                 }
+                .accessibilityIdentifier("intervalDecrementButton")
                 Button(action: {
                     tempInterval += 1
                 }) {
@@ -42,10 +44,12 @@ struct SettingsView: View {
                         .background(Color.gray)
                         .clipShape(Circle())
                 }
+                .accessibilityIdentifier("intervalIncrementButton")
             }
             Button("Guardar") {
                 viewModel.updateAlertInterval(tempInterval)
             }
+            .accessibilityIdentifier("saveButton")
             .padding()
         }
     }

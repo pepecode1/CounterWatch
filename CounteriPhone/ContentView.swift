@@ -17,7 +17,7 @@ class CounteriPhoneViewModel: NSObject, ObservableObject, WCSessionDelegate {
     /// Sesión para sincronización con Watch.
     private var session: WCSession?
     /// Suite de UserDefaults compartida con App Group.
-    private let userDefaults = UserDefaults(suiteName: "group.com.tuempresa.counterwatch")
+    private let userDefaults = UserDefaults(suiteName: "group.com.pepecode.counterwatch")
     override init() {
         super.init()
         if WCSession.isSupported() {
