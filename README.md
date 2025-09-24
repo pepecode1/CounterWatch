@@ -45,8 +45,8 @@ CounterWatch es una aplicación para Apple Watch que permite contar personas de 
    cd CounterWatch
 
  ## Capturas de pantalla
-     ### Apple Watch
-     <img width="206" height="256" alt="Simulator Screenshot - Clone 1 of Apple Watch Series 11 (46mm) - 2025-09-24 at 10 23 29" src="https://github.com/user-attachments/assets/6aa349e8-eb83-4e8f-aaf8-ae6f109268c1" />
+ 
+<img width="206" height="256" alt="Simulator Screenshot - Clone 1 of Apple Watch Series 11 (46mm) - 2025-09-24 at 10 23 29" src="https://github.com/user-attachments/assets/6aa349e8-eb83-4e8f-aaf8-ae6f109268c1" />
 <img width="206" height="256" alt="Simulator Screenshot - Clone 1 of Apple Watch Series 11 (46mm) - 2025-09-24 at 10 23 24" src="https://github.com/user-attachments/assets/27b29306-a1fe-4177-9b35-e1fa9f9ee1e7" />
 <img width="206" height="256" alt="Simulator Screenshot - Clone 1 of Apple Watch Series 11 (46mm) - 2025-09-24 at 10 23 20" src="https://github.com/user-attachments/assets/aeba9527-cce5-4e20-a3e7-7b35b83d014f" />
 <img width="206" height="256" alt="Simulator Screenshot - Clone 1 of Apple Watch Series 11 (46mm) - 2025-09-24 at 10 23 17" src="https://github.com/user-attachments/assets/72ac638a-070b-4265-93dc-2a50259c84d5" />
